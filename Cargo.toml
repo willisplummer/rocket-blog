@@ -6,3 +6,16 @@ authors = ["willisplummer <willisplummer@gmail.com>"]
 [dependencies]
 rocket = "0.3.3"
 rocket_codegen = "0.3.3"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+diesel = { version = "*", features = ["sqlite"] }
+diesel_codegen = { version = "*", features = ["sqlite"] }
+r2d2-diesel = "*"
+r2d2 = "*"
+dotenv = "0.10.*" # workaround for broken dependencies
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["handlebars_templates"]
