@@ -13,9 +13,5 @@ diesel = { version = "*", features = ["sqlite"] }
 diesel_codegen = { version = "*", features = ["sqlite"] }
 r2d2-diesel = "*"
 r2d2 = "*"
+rocket_contrib = "*"
 dotenv = "0.10.*" # workaround for broken dependencies
-
-[dependencies.rocket_contrib]
-version = "*"
-default-features = false
-features = ["handlebars_templates"]
